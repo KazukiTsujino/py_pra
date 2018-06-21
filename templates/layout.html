@@ -1,13 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<title>{{ title }}</title>
-<body bgcolor= "blue">
-{% block content %}
-<font color="white">
-<h3>Hello</h3>
-<p>{{name}}さん</p>
-</font>
-{% endblock %}
-</body>
+    <meta charset="utf-8">
+    <title>Yahoo News Scraip Test</title>
 </head>
+<body bgcolor= "blue" align="center">
+    {% block content %}
+    <style>
+    a { text-decoration: none;}
+    a:hover { text-decoration: none;}
+    </style>
+    <font color="white">
+    <h1 style="color:gray;">Hello!</h1>
+    <h3>{{name}}さん</h3>
+    <p>今日のTopicニュースです</p>
+    <a href={{yahoo_url}}>{{yahoo_url}}</a>
+    </font>
+    {% endblock %}
+</body>
+</html>
